@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>index</title>
+	<style>
+	label {width: 300px; clear: both;}
+	input, label {float: left;}
+	p {margin: 10px; padding: 10px;}
+	</style>
+</head>
+
+<body>
+	<form action="result.php" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<p><label for="name">Name</label><input name="name" /></p>
+			<p><label for="webcam">Webcam</label><input type="file" name="webcam" id="webcam" /></p>
+			<p><label for="other">Other</label><input name="other" /></p>
+			<p style="text-align: center"><input type="submit" value="send"/></p>
+		
+		</fieldset>
+	</form>
+	<script src="camera.js"></script>
+</body>
+</html>
