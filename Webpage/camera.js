@@ -4,7 +4,7 @@ $id = function(id) {
 	return document.getElementById(id);
 };
 
-handleShot = function(str) {
+save_webcam_shot = function(str) {
 	$id('webcaminput_field').value = str;
 };
 
