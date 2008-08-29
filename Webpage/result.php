@@ -1,8 +1,17 @@
 <?
+
+	$target_path = "uploads/";
+
 	if ( !array_key_exists('webcam',$_FILES)) {
-		header("Content-Type: image/png");
-		echo base64_decode($_POST['webcam']);
+		$target_path = $target_path . "webcam_shot_at" .time() . ".png";
+		$f = fopen( $target_path, "wb" ); 
+		fwrite($f,base64_decode($_POST['webcam'])); 
+		fclose($f);
 	} else {
-		echo "File: " . $_FILES['webcam']['name'];
+		$target_path = $target_path .$_FILES['webcam']['name']; 
+		move_uploaded_file($_FILES['webcam']['tmp_name'], $target_path);
 	}
+	
+	echo "<img src='".$target_path."' alt='' />";
+	
 ?>
