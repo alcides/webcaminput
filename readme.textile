@@ -20,7 +20,5 @@ Just fork this project on github and send me a pull request.
 
 h2. Author
 
-Alcides Fonseca
-me@alcidesfonseca.com
-http://alcidesfonseca.com
+"Alcides Fonseca":http://alcidesfonseca.com (me@alcidesfonseca.com)
 
