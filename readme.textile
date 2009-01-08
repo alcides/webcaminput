@@ -1,0 +1,26 @@
+
+h1. WebcamInput
+
+WebcamInput is a script that replaces <input type="file"> with a webcam field.
+
+It uses javascript to toggle the file/webcam mode and Flash to take the picture from your webcam.
+
+This could be used in your register page, to take a quick picture of your user to use as an avatar.
+
+
+h2. Using
+
+Just copy and paste the example HTML and change to suite your needs. Flash source is included if you want to custom it.
+
+There is a sample PHP script to upload the file if your are using the regular file input, or base64_decode if you are using WebcamInput. If you have any problem adapting this to your project, contact the author.
+
+h2. Contributing
+
+Just fork this project on github and send me a pull request.
+
+h2. Author
+
+Alcides Fonseca
+me@alcidesfonseca.com
+http://alcidesfonseca.com
+
